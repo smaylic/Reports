@@ -1,0 +1,199 @@
+body{
+    
+    background-color: #181e34;
+
+line-height: 150%;
+color: #ffffff;
+font-family: 'Montserrat';
+}
+
+main{
+    padding-bottom: 120px;
+}
+
+footer{
+padding: 60px 0px;
+border-top: 1px solid #323952;
+}
+.conteiner{
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.header{
+    padding: 30px 0 36px;
+}
+
+.header-flex{
+    display: flex;
+    align-items: center;
+}
+.header-nav{
+    margin-left: auto;
+}
+.header-nav-flex{
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 20px;
+}
+.Log-in{
+    color: #2766ae;
+    background-color: #ffffff;
+border-radius: 24px;
+padding: 14px 30px;
+font-weight: 500;
+}
+.first-section{
+background: url(../img/hero-bg.jpg) 0 0 /cover no-repeat;
+border: 1px solid #000;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 120px 0px;
+}
+h1{
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 49px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.first-section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-section-text{
+    max-width: 436px;
+}
+
+.first-section-text span{
+    font-family: Montserrat;
+font-weight: 700;
+text-transform: uppercase;
+color: #01A2CB;
+}
+.Paragraph{
+    margin-bottom: 15px;
+}
+
+
+.first-section-buttons{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+}
+
+.first-section-button-one , .first-section-button-two{
+    padding: 18px 30px;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.first-section-button-one{
+    margin-bottom: 10px;
+}
+
+.first-section-button-two{
+background: linear-gradient(95deg, #00A4CC 6.7%, #2766AE 91.35%);
+}
+
+.first-section-button-two img {
+    margin-left: 4px;
+}
+
+h2{
+    padding-top: 120px;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 49px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.second-section p {
+    text-align: center;
+    max-width: 513px;
+    margin: 0 auto 16px;
+}
+
+.second-section-flex{
+padding-top: 60px;
+display: flex;
+flex-wrap: wrap;
+margin: 0px -28px;
+}
+
+.card-container{
+    flex: 0 0 25%;
+    padding: 0px 14px;
+    padding-bottom: 28px;
+}
+.card{
+border-radius: 16px;
+border: 2px solid #176BAE;
+background: #197CB8;
+box-shadow: 4px 4px 13px 0px rgba(5, 13, 41, 0.76);
+text-align: center;
+padding: 28px;
+
+}
+
+h3{
+
+font-size: 22px;
+font-weight: 600;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+
+.second-section-button{
+    text-align: center;
+    display: block;
+    border-radius: 100px;
+background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+max-width: 436px;
+margin: 0px auto;
+padding: 18px 30px;
+}
+.footer-flex{
+    display: flex;
+}
+.description{
+    max-width: 267px;
+    margin-right: auto;
+}
+
+.description p {
+    padding-top: 15px;
+}
+
+.footer-column{
+    max-width: 204px;
+    width: 100%;
+}
+.footer-column-margin{
+    margin-right: 28px;
+}
+
+.footer-column li{
+    padding-top: 10px;
+}
+
+h4{
+    padding-bottom: 10px;
+font-size: 22px;
+font-weight: 600;
+text-transform: uppercase;
+}

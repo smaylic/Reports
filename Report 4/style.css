@@ -1,0 +1,16 @@
+.container{
+    background-color: grey;
+    overflow: auto;
+    height: 600px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.content{
+    display: inline-block;
+    max-width: 250px;
+    max-height: 200px;
+    background-color: rgb(236, 210, 172);
+    border-radius: 15px;
+    padding: 0px 10px 20px 10px;
+    margin: 10px 5px 10px 5px;
+}

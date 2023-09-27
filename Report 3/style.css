@@ -1,0 +1,19 @@
+header{
+    height: 60px;
+    background-color: orange;
+}
+footer{
+    height: 300px;
+    background-color: purple;
+    color: white;
+}
+.a-wite{
+    color: white;
+}
+blockquote{
+    background-color: bisque;
+    text-align: center;
+}
+.quote-author{
+    text-align: left;
+}
