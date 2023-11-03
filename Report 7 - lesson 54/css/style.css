@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(73, 67, 67);
+    font-size: 30px;
+}
+
+.on-display{
+    min-height: 100px;
+    min-width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+}
+
+.on-display__circle{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+}
