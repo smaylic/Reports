@@ -1,0 +1,46 @@
+.body{
+    background-color: antiquewhite;
+    height: 200vh;
+}
+
+.btn-modal{
+    display: block;
+    background-color: white;
+    border-radius: 10%;
+    padding: 15px 40px;
+    font-size: 24px;
+    margin: 15px auto;
+}
+
+.modal{
+    background-color: #00000059;
+    position: fixed;
+    inset: 0px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.modal__window{
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    top: 30vh;
+    width: 30vw;
+    max-height: 50vh;
+    padding: 20px 15px;
+}
+
+.btn-close{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.body--modal-open .modal{
+    visibility: visible;
+}
+
+.body--fixed{
+    overflow: hidden;
+}
