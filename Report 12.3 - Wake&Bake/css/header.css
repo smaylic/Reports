@@ -1,0 +1,104 @@
+
+.header{
+    background: url("../img/decor/bg-header.png")  50% 100% / cover no-repeat;
+}
+
+.header__top{
+    padding-top: 19px;
+}
+
+.header__top--inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.header__logo{
+    z-index: 11;
+}
+
+.header__top--inner img{
+    max-width: 174px;
+}
+
+.nav__list{
+    display: flex;
+    align-items: end;
+    padding-bottom: 7px;
+    gap: 6vh 0px;
+}
+
+.nav__link{
+    padding: 7px 0px;
+    position: relative;
+    margin-left: 40px;
+    z-index: 1;
+}
+
+.nav__link::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -14px;
+    top: -14px;
+    z-index: -1;
+    height: 34px;
+    width: 34px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.nav__link:hover::before {
+    opacity: 1;
+}
+
+.burger-icon{
+    position: relative;
+    display: none;
+    height: 50px;
+    width: 50px;
+    padding: 0px 10px;
+    z-index: 11;
+    
+}
+
+.burger-icon span, .burger-icon span::after, .burger-icon span::before{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: var(--accent-text);
+    border-radius: 100px;
+    transition: var(--transition);
+}
+
+.burger-icon span{
+    position: relative;
+}
+
+.burger-icon span::after{
+    content: '';
+    bottom: 10px;
+    position: absolute;
+}
+
+.burger-icon span::before{
+    content: '';
+    top: 10px;
+    position: absolute;
+}
+
+.body--open-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--open-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+.body--open-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(45deg);
+}
