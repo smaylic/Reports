@@ -1,0 +1,139 @@
+
+.body--fixed{
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: #00000071;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+}
+
+.body--modal-open .modal__head {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__window {
+    max-width: 760px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    border: 7px solid #ffffff;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    background: #211a15c2;
+}
+
+.modal__close{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+
+.modal__close span,
+.modal__close span::before{
+    height: 2px;
+    width: 16px;
+    background: #ffdf9e;
+}
+
+.modal__close span{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 6px;
+}
+
+.modal__close span::before{
+    content: '';
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+
+.modal__consult--img{
+    height: 250px;
+    background: #ddb86fa1;
+    display: flex;
+    align-items: center;
+}
+
+.modal__consult--inner{
+    padding: 0px 45px 0 21px;
+    max-width: 470px;
+    width: 100%;
+}
+
+.modal__consult--text{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.modal__consult--form{
+    display: flex;
+    flex-direction: column;
+}
+.modal__consult--form button{
+    display: none;
+}
+
+.modal__form-label{
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 7px 0 7px 30px;
+    
+}
+
+.modal__consult--check{
+    display: flex;
+    align-items: center;
+}
+
+.modal__consult--check span{
+    color: #ffffff;
+}
+
+.modal__consult--check a{
+    color: #ffdf9e;
+    text-decoration: underline;
+}
+
+.modal__consult--checkbox {
+    margin-right: 10px;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    transition: var(--transition);
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.modal__consult--checkbox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../img/icons/check.svg") 50% 50% no-repeat;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.modal__consult--checkbox:checked::before {
+    opacity: 1;
+}
