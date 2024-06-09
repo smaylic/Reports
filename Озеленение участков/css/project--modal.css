@@ -15,16 +15,22 @@
     position: relative;
 }
 
+
 .modal__window--project {
+    
+
     display: block;
     height: 600px;
 
     padding: 30px 100px 40px;
 
     border: 7px solid #ffffff;
-    backdrop-filter: blur(10px);
-    background: #211a15c2;
+
+    background: #221b16e6;
+
 }
+
+
 
 .modal__window--project--wrapper{
     max-width: 1220px;

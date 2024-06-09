@@ -1,5 +1,23 @@
 (function () {
 
+    if (document.documentElement.clientWidth < 740){
+        const d = document.querySelectorAll('[data-fs="gallery--big"]')
+        d.forEach(e => {
+            e.removeAttribute("href");
+        });
+        refreshFsLightbox();
+    }
+    else{
+        const d = document.querySelectorAll('[data-fs="gallery-small"]')
+        d.forEach(e => {
+            e.removeAttribute("href");
+            
+        });
+        refreshFsLightbox();
+    }
+
+
+
     if (document.documentElement.clientWidth < 970){
         const activeContent = document.querySelectorAll('.tab-content--show')
         activeContent.forEach(el => {
@@ -73,7 +91,6 @@
         const targent = event.target
         if(targent&&targent.classList.contains('modal')){
             closeModal ()
-            closeModalProject ()
         }
         })
     });
@@ -84,7 +101,6 @@
         
         if(event.code === 'Escape'){
             closeModal ()
-            closeModalProject ()
         }
         })
 
